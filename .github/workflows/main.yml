@@ -27,7 +27,7 @@ jobs:
           context: .
           target: test
           load: true
-          args: |
+          build-args: |
             --build-arg MY_BUILD_ARG=value
             --no-cache
 
