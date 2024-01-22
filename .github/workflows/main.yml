@@ -27,7 +27,9 @@ jobs:
           context: .
           target: test
           load: true
-          args: --no-cache
+          args: |
+            --build-arg MY_BUILD_ARG=value
+            --no-cache
 
       - name: Build and push
         uses: docker/build-push-action@v5
